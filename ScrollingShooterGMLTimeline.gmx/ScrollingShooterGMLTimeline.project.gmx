@@ -47,6 +47,9 @@
     <object>objects\objBalaEnemigo2</object>
     <object>objects\objBalaEnemigo3</object>
   </objects>
+  <timelines name="timelines">
+    <timeline>timelines\tl_enemigos</timeline>
+  </timelines>
   <rooms name="rooms">
     <room>rooms\Nivel1</room>
   </rooms>

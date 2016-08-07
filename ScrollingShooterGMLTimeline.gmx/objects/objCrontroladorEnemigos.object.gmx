@@ -27,6 +27,11 @@
             <kind>1</kind>
             <string>/// Enemigos iniciales
 
+timeline_index = tl_enemigos;
+timeline_position = 0;
+timeline_running = true;
+
+/*
 instance_create(random(room_width), -20, objEnemigo1);
 instance_create(random(room_width), -100, objEnemigo1);
 
@@ -34,6 +39,9 @@ alarm[0] = 200;
 alarm[1] = 500;
 alarm[2] = 1000;
 alarm[3] = 1500;
+
+*/
+
 </string>
           </argument>
         </arguments>

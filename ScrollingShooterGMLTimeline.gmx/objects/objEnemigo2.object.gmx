@@ -49,8 +49,7 @@
           <argument>
             <kind>1</kind>
             <string>if (y &gt; room_height + sprite_height/2){
-    x = irandom_range(sprite_width/2, room_width-sprite_width/2);
-    y = -sprite_height/2;
+    instance_destroy();
 }
 
 var die = floor(random(30)+1);
@@ -87,8 +86,7 @@ with (other){
 }
 
 instance_create(x, y, objExploEnemigo);
-x = irandom_range(sprite_width/2, room_width-sprite_width/2);
-y = -sprite_height/2;
+instance_destroy();
 score += 20;
 </string>
           </argument>
@@ -115,8 +113,7 @@ score += 20;
             <string>audio_play_sound(sndExploJugador, 10, false);
 instance_create(x, y, objExploEnemigo);
 health -= 30;
-x = irandom_range(sprite_width/2, room_width-sprite_width/2);
-y = -20;
+instance_destroy();
 </string>
           </argument>
         </arguments>
