@@ -55,6 +55,7 @@
     <instance objName="objIsla2" x="160" y="160" name="inst_A1F11B9C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objIsla3" x="480" y="416" name="inst_49B3B557" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="objAvionJugador" x="320" y="288" name="inst_3CCD4A75" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="objEnemigo1" x="288" y="32" name="inst_1415729F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

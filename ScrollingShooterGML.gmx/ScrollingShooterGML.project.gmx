@@ -4,12 +4,19 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\sndExploEnemigo</sound>
+    <sound>sound\sndExploJugador</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprIsla1</sprite>
     <sprite>sprites\sprIsla2</sprite>
     <sprite>sprites\sprIsla3</sprite>
     <sprite>sprites\sprAvionJugador</sprite>
+    <sprite>sprites\sprBullet</sprite>
+    <sprite>sprites\sprExploEnemigo</sprite>
+    <sprite>sprites\sprEnemigo1</sprite>
+    <sprite>sprites\sprExploJugador</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\backWater</background>
@@ -20,6 +27,10 @@
     <object>objects\objIsla2</object>
     <object>objects\objIsla3</object>
     <object>objects\objAvionJugador</object>
+    <object>objects\objBullet</object>
+    <object>objects\objExploEnemigo</object>
+    <object>objects\objExploJugador</object>
+    <object>objects\objEnemigo1</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Nivel1</room>
