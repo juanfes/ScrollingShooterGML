@@ -17,6 +17,8 @@
     <sprite>sprites\sprExploEnemigo</sprite>
     <sprite>sprites\sprEnemigo1</sprite>
     <sprite>sprites\sprExploJugador</sprite>
+    <sprite>sprites\sprBottom</sprite>
+    <sprite>sprites\sprVida</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\backWater</background>
@@ -31,6 +33,8 @@
     <object>objects\objExploEnemigo</object>
     <object>objects\objExploJugador</object>
     <object>objects\objEnemigo1</object>
+    <object>objects\objCrontroladorEnemigos</object>
+    <object>objects\objControlVida</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Nivel1</room>

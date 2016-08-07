@@ -72,7 +72,7 @@ canShoot = 1;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Movimiento del avión del jugador
+            <string>/// Movimiento del jugador
 
 left = keyboard_check(vk_left);
 right = keyboard_check(vk_right);
@@ -98,7 +98,7 @@ if (up){
 }
 
 if (down){
-    if (y &lt; (room_height-sprite_height/2)){
+    if (y &lt; room_height-120){
         y += 2  // Máximo el mismo valor de la velocidad del fondo
     }
 
