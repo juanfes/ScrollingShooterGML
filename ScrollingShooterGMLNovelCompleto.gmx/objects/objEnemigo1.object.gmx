@@ -48,7 +48,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (y &gt; room_height + sprite_height/2){
+            <string>if (y &gt; (view
+
+if (y &gt; room_height + sprite_height/2){
     instance_destroy();
 }
 </string>
