@@ -49,7 +49,7 @@
           <argument>
             <kind>1</kind>
             <string>if (y &gt; room_height + sprite_height/2){
-    x = random(room_width);
+    x = irandom_range(sprite_width/2, room_width-sprite_width/2);
     y = -sprite_height/2;
 }
 </string>
@@ -81,11 +81,9 @@ with (other){
 }
 
 instance_create(x, y, objExploEnemigo);
-x = random(room_width);
+x = irandom_range(sprite_width/2, room_width-sprite_width/2);
 y = -sprite_height/2;
-score += 10;
-
-show_debug_message(score);
+score += 5;
 </string>
           </argument>
         </arguments>
@@ -111,7 +109,7 @@ show_debug_message(score);
             <string>audio_play_sound(sndExploJugador, 10, false);
 instance_create(x, y, objExploEnemigo);
 health -= 30;
-x = random(room_width);
+x = irandom_range(sprite_width/2, room_width-sprite_width/2);
 y = -20;
 </string>
           </argument>
