@@ -8,7 +8,6 @@
     <sound>sound\sndExploEnemigo</sound>
     <sound>sound\sndExploJugador</sound>
     <sound>sound\sndImpactoEnemigo</sound>
-    <sound>sound\sndPowerup</sound>
   </sounds>
   <sprites name="sprites">
     <sprite>sprites\sprIsla1</sprite>
@@ -26,8 +25,6 @@
     <sprite>sprites\sprBalaEnemigo2</sprite>
     <sprite>sprites\sprBalaEnemigo3</sprite>
     <sprite>sprites\sprEnemigo4</sprite>
-    <sprite>sprites\sprArma1</sprite>
-    <sprite>sprites\sprBombaNova</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\backWater</background>
@@ -49,8 +46,6 @@
     <object>objects\objControlVida</object>
     <object>objects\objBalaEnemigo2</object>
     <object>objects\objBalaEnemigo3</object>
-    <object>objects\objArma1</object>
-    <object>objects\objExplosionNova</object>
   </objects>
   <timelines name="timelines">
     <timeline>timelines\tl_enemigos</timeline>

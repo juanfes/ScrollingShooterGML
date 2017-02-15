@@ -31,16 +31,15 @@ timeline_index = tl_enemigos;
 timeline_position = 0;
 timeline_running = true;
 
-/*
-instance_create(random(room_width), -20, objEnemigo1);
-instance_create(random(room_width), -100, objEnemigo1);
+// instance_create(random(room_width), -20, objEnemigo1);
+// instance_create(random(room_width), -100, objEnemigo1);
 
-alarm[0] = 200;
-alarm[1] = 500;
-alarm[2] = 1000;
-alarm[3] = 1500;
+// alarm[0] = 200;
+// alarm[1] = 500;
+// alarm[2] = 1000;
+// alarm[3] = 1500;
 
-*/
+
 
 </string>
           </argument>
@@ -66,6 +65,10 @@ alarm[3] = 1500;
             <kind>1</kind>
             <string>instance_create(random(room_width), room_height, objEnemigo4);
 alarm[4] = 1000;
+
+
+
+
 </string>
           </argument>
         </arguments>
@@ -90,6 +93,10 @@ alarm[4] = 1000;
             <kind>1</kind>
             <string>instance_create(random(room_width), -20, objEnemigo3);
 alarm[2] = 400;
+
+
+
+
 </string>
           </argument>
         </arguments>

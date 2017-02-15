@@ -27,6 +27,34 @@
             <kind>1</kind>
             <string>velocidad = 4;
 canShoot = 1;
+arma1 = 0;
+novas = 1;
+
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>arma1 = 0;
 </string>
           </argument>
         </arguments>
@@ -124,16 +152,85 @@ if (down){
           <argument>
             <kind>1</kind>
             <string>/// Disparar
-
 disparar = keyboard_check(vk_space);
-
 if (disparar){
     if (canShoot){
         instance_create(x, y, objBullet);
         canShoot = 0;
-        alarm[0] = 15;       
+        alarm[0] = 15;
+        if (arma1){     // Disaros múltiples - arma1
+            bala2 = instance_create(x, y, objBullet);
+            bala2.direction = 60;
+            bala3 = instance_create(x, y, objBullet);
+            bala3.direction = 120;                 
+            }       
     }
 }
+
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>/// Bombas nova
+bombaNova = keyboard_check(ord('B'));
+if (bombaNova &amp;&amp; novas){
+    audio_play_sound(sndExploEnemigo, 10, false);
+    with(objEnemigo1){instance_destroy();}
+    with(objEnemigo2){instance_destroy();}
+    with(objEnemigo3){instance_destroy();}
+    with(objBalaEnemigo2){instance_destroy();}
+    with(objBalaEnemigo3){instance_destroy();}
+    instance_create(0, 0, objExplosionNova);
+    novas = 0;
+    }
+    
+    
+    
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="objArma1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>audio_play_sound(sndPowerup, 10, false);
+with(other){instance_destroy();}
+arma1 = 1;
+alarm[1] = 150;
+
+
 </string>
           </argument>
         </arguments>
